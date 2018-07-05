@@ -1,14 +1,289 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Quiz
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <div *ngIf="cover" id="ruu">
+    <h1>Welcome To  Quiz App</h1>
+
+    
+
+    <button ion-button block (click)= "start()">START</button>
+
+  </div>
+
+
+  <div *ngIf="food" id="reew">
+ 
+  <h1>General</h1>
+
+
+ <p>Mandela was the first black president in SA</p>
+
+<ion-item>
+  <ion-label>True</ion-label>
+  <ion-checkbox [(ngModel)]="black" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+ <ion-label>False</ion-label>
+ <ion-checkbox [(ngModel)]="black2" color="dark"></ion-checkbox>
+</ion-item>
+
+<p>Mandela was born in 18 June</p>
+
+<ion-item>
+   <ion-label>True</ion-label>
+  <ion-checkbox [(ngModel)]="june" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+   <ion-label>False</ion-label>
+   <ion-checkbox [(ngModel)]="june2" color="dark"></ion-checkbox>
+</ion-item>
+  
+
+  <p>Jesus was born on the 21 December</p>
+
+<ion-item>
+  <ion-label>True</ion-label>
+  <ion-checkbox [(ngModel)]="born"  color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+   <ion-label>False</ion-label>
+   <ion-checkbox [(ngModel)]="born2" color="dark" ></ion-checkbox>
+</ion-item>
+
+  <p>Jesus died for our sins</p>
+
+ <ion-item>
+    <ion-label>True</ion-label>
+   <ion-checkbox [(ngModel)]="died" color="dark"></ion-checkbox>
+ </ion-item>
+<ion-item>
+   <ion-label>False</ion-label>
+   <ion-checkbox [(ngModel)]="died2" color="dark"></ion-checkbox>
+</ion-item>
+
+  <p>The current president of SA is Zuma</p>
+
+<ion-item>
+ <ion-label>True</ion-label>
+ <ion-checkbox [(ngModel)]="last" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+   <ion-label>False</ion-label>
+   <ion-checkbox [(ngModel)]="last2" color="dark"></ion-checkbox>
+</ion-item>
+
+<div class="fff">
+<button ion-button block (click)= "clickn()">NEXT</button>
+</div>
+
+</div>
+
+<div *ngIf="sub" id="row">
+
+<h1>Multiple choice for mathematics</h1>
+
+<p> solve for X using the following equation: X = 2X -y </p>
+<ion-item>
+<ion-label>-X = -y</ion-label>
+<ion-checkbox [(ngModel)]="pre" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label> X = Y</ion-label>
+<ion-checkbox [(ngModel)]="pres" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label> 3X = -y</ion-label>
+<ion-checkbox [(ngModel)]="press" color="dark"></ion-checkbox>
+</ion-item>
+
+<p> solve for z using the following equation: z = 3 + 5 - 0 * 20 + 3 </p>
+<ion-item>
+<ion-label>163</ion-label>
+<ion-checkbox [(ngModel)]="click" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label> 8 </ion-label>
+<ion-checkbox [(ngModel)]="clickk" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label> 11</ion-label>
+<ion-checkbox [(ngModel)]="clickkk" color="dark"></ion-checkbox>
+</ion-item>
+
+<p> solve the  following to the simplest form: v = 2(X + y)(X + y) </p>
+<ion-item>
+<ion-label>v = 2X^2 + 4Xy + 2y^2</ion-label>
+<ion-checkbox [(ngModel)]="fre" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label>v = 2X^2 + X + y^2 + 2y</ion-label>
+<ion-checkbox [(ngModel)]="fres" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label>v = 3X^2 + 4Xy + 3y^2</ion-label>
+<ion-checkbox [(ngModel)]="fress" color="dark"></ion-checkbox>
+</ion-item>
+
+<p> solve the following: f = 15/5 + 7 * 3 - 12 </p>
+<ion-item>
+<ion-label>12</ion-label>
+<ion-checkbox [(ngModel)]="vut" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label> 14</ion-label>
+<ion-checkbox [(ngModel)]="vuto" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label> 24</ion-label>
+<ion-checkbox [(ngModel)]="vutom" color="dark"></ion-checkbox>
+</ion-item>
+
+<p> solve for X using the following equation: k = 15 - 45 + 10 </p>
+<ion-item>
+<ion-label>20</ion-label>
+<ion-checkbox [(ngModel)]="mah" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label> 25</ion-label>
+<ion-checkbox [(ngModel)]="mahl" color="dark"></ion-checkbox>
+</ion-item>
+<ion-item>
+<ion-label> -20</ion-label>
+<ion-checkbox [(ngModel)]="mahlor" color="dark"></ion-checkbox>
+</ion-item>
+
+<div class="vvv">
+    <button ion-button block (click)= "clickne()">NEXT2</button>
+</div>
+
+</div>
+
+
+<div *ngIf="tel" id="ruw">
+
+  <h1>choose the correct answer</h1>
+  
+  <p> Who is the president of SA </p>
+  <ion-item>
+  <ion-label>Zuma</ion-label>
+  <ion-checkbox [(ngModel)]="mus" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label> Mandela</ion-label>
+  <ion-checkbox [(ngModel)]="mus1" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label> Ramaphosa</ion-label>
+  <ion-checkbox [(ngModel)]="mus2" color="dark"></ion-checkbox>
+  </ion-item>
+  
+  <p> Mandela was born in</p>
+  <ion-item>
+  <ion-label>18 July 1918</ion-label>
+  <ion-checkbox [(ngModel)]="iris" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label> 8 june 1916 </ion-label>
+  <ion-checkbox [(ngModel)]="iris1" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label> 18 june 1918</ion-label>
+  <ion-checkbox [(ngModel)]="iris2" color="dark"></ion-checkbox>
+  </ion-item>
+  
+  <p> When did Mandela died?</p>
+  <ion-item>
+  <ion-label>15 july 2014</ion-label>
+  <ion-checkbox [(ngModel)]="lul" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label>5 December 2013</ion-label>
+  <ion-checkbox [(ngModel)]="lul1" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label>22 may 2012</ion-label>
+  <ion-checkbox [(ngModel)]="lul2" color="dark"></ion-checkbox>
+  </ion-item>
+  
+  <p>Where did Mandela born?</p>
+  <ion-item>
+  <ion-label>Qunu</ion-label>
+  <ion-checkbox [(ngModel)]="tiy" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label>Umtata</ion-label>
+  <ion-checkbox [(ngModel)]="tiy1" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label> Mvezo</ion-label>
+  <ion-checkbox [(ngModel)]="tiy2" color="dark"></ion-checkbox>
+  </ion-item>
+  
+  <p>Who was the first black president of SA?</p>
+  <ion-item>
+  <ion-label>Mbeki</ion-label>
+  <ion-checkbox [(ngModel)]="fifi" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label> Mandela</ion-label>
+  <ion-checkbox [(ngModel)]="fifi1" color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+  <ion-label>Zuma</ion-label>
+  <ion-checkbox [(ngModel)]="fifi2" color="dark"></ion-checkbox>
+  </ion-item>
+  
+  <div class="vvv">
+      <button ion-button block (click)= "clickAnswer()">SAVE</button>
+
+  </div>
+  
+  </div>
+
+<div *ngIf="answer" id="raw">
+
+
+  <div class="bbb">
+    Scores: {{score}}/15
+   </div>
+ 
+
+
+
+ <h3>General Correct Answers</h3>
+
+ <p>True</p>
+ <p>False</p>
+ <p>False</p>
+ <p>True</p>
+ <p>False</p>
+
+ <h3>Multiple choice for mathematics correct answers</h3>
+
+ <p>X = Y</p>
+ <p>11</p>
+ <p>v = 2X^2 + 4Xy + 2y^2</p>
+ <p>12</p>
+ <p>-20</p>
+
+ <h3>Last questions correct answers</h3>
+ <p>Ramaphosa</p>
+ <p>18 July 1918</p>
+ <p>5 December 2013</p>
+ <p>Qunu</p>
+ <p>Mandela</p>
+
+   <div class="aaa">
+    <button ion-button block (click)= "restart()">RESTART</button>
+  </div>
+
+    </div>
+
 </ion-content>

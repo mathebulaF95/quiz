@@ -1,3 +1,74 @@
-page-home {
 
+ion-title{
+background-color:chocolate;
+
+}
+
+h1{
+    text-align: center;
+    color:chocolate;
+}
+
+#raw{
+    text-align: center;
+
+}
+
+.bbb{
+    font-size: 180%;
+}
+
+
+#ruu{
+    button{
+    background-color: chocolate;
+    width: 30%;
+    position: absolute;
+    transform: translateX(-50%);
+    left:50%;
+    bottom: 20px;
+
+
+}
+
+    background-image: url('../assets/imgs/fressy.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+ }
+
+ .fff{
+     button{
+         background-color: chocolate;
+     }
+ }
+
+ .vvv{
+     button{
+         background-color: chocolate;
+         width: 30%;
+         position: absolute;
+         transform: translateX(-50%);
+         left: 50%;
+     }
+ }
+
+#reew{
+    button{
+    width: 30%;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    
+    }
+}
+
+.aaa{
+    button{
+        background-color: chocolate;
+        width: 30%;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+    }
 }
